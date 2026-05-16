@@ -15,6 +15,7 @@ Including another URLconf
 """
 
 from django.urls import path
+from calculator.views import dish_view
 
 urlpatterns = [
     path('', include('stations.urls')),
