@@ -23,4 +23,3 @@ class Command(BaseCommand):
                 lte_exists=phone['lte_exists'],
                 slug=slugify(phone['name']),
             ).save()
-            pass
