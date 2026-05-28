@@ -15,7 +15,7 @@ class Teacher(models.Model):
 
 class Student(models.Model):
     name = models.CharField(max_length=30, verbose_name='Имя')
-    teacher = models.ForeignKey(Teacher, related_name='students', verbose_name='Учителя')
+    teacher = models.ForeignKey(Teacher, related_name='students', on_delete=models.CASCADE)
     group = models.CharField(max_length=10, verbose_name='Класс')
 
     class Meta:
